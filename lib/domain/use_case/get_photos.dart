@@ -1,10 +1,8 @@
-import 'package:flutter/cupertino.dart';
-import 'package:try_image_search/core/use_case.dart';
 import 'package:try_image_search/domain/model/saearch_model.dart';
 import 'package:try_image_search/domain/repository/repository.dart';
 import 'package:try_image_search/core/result.dart';
 
-class GetPhotos extends UseCase<Result<SearchModel>, String> {
+class GetPhotos {
   PhotoRepository repository;
 
   GetPhotos(
