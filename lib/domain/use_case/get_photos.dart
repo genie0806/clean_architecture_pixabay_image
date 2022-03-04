@@ -9,7 +9,6 @@ class GetPhotos {
     this.repository,
   );
 
-  @override
   Future<Result<SearchModel>> call(String query) async {
     final photos = await repository.getPhotos(query);
 
