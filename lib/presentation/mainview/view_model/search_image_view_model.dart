@@ -1,10 +1,6 @@
 import 'dart:async';
-import 'dart:math';
 import 'package:flutter/cupertino.dart';
-import 'package:try_image_search/domain/repository/repository.dart';
 import 'package:try_image_search/core/result.dart';
-import 'package:try_image_search/domain/model/saearch_model.dart';
-import 'package:try_image_search/domain/use_case/get_photos.dart';
 import 'package:try_image_search/domain/use_case/main_use_cases.dart';
 import 'package:try_image_search/presentation/mainview/view_model/photo_state.dart';
 import 'package:try_image_search/presentation/mainview/ui_event.dart';
