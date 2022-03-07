@@ -1,4 +1,3 @@
-import 'package:http/http.dart' as http;
 import 'package:try_image_search/core/result.dart';
 
 import 'package:try_image_search/data/data_source/remote/pixabay_api.dart';
