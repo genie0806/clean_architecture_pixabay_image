@@ -22,6 +22,8 @@ class _SearchImageViewState extends State<SearchImageView> {
     super.initState();
     Future.microtask(() {
       context.read<SearchImageViewModel>().fetch('iphone');
+      //ViewModel의 Query를 즉 검색어를 iphone으로 초기 설정
+
       context.read<SearchImageViewModel>().eventStream.listen((event) {
         if (event is Showsnackbar) {
           final snackbar = SnackBar(content: Text(event.message));
