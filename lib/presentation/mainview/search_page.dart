@@ -91,6 +91,7 @@ class _SearchImageViewState extends State<SearchImageView> {
           children: viewModel.state.searchModel!.hits!
               .where((e) =>
                   e.tags.toLowerCase().contains(query.trim().toLowerCase()))
+              //제목의 띄어쓰기 제거, 대소문자 구분없이
               .map((e) => CardViewItem(
                     hit: e,
                     onTap: () {
