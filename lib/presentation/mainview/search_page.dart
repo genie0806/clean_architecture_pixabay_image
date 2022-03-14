@@ -99,6 +99,7 @@ class _SearchImageViewState extends State<SearchImageView> {
                         context,
                         MaterialPageRoute(
                           builder: (context) => DetailPage(detailData: e),
+                          //클릭시 디테일 페이지로 넘어가게
                         ),
                       );
                     },
