@@ -26,7 +26,8 @@ class SearchImageViewModel extends ChangeNotifier {
       notifyListeners();
     }, error: (e) {
       print((result as Error).e.toString());
-      _eventController.add(UiEvent.showSnackBar('네트워크 에러다'));
+      _eventController.add(UiEvent.showSnackBar('네트워크 에러입니다.'));
+      //네트워크 안됐을시 에러메세지 표시
     });
   }
 }
