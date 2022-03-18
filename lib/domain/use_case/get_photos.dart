@@ -14,8 +14,10 @@ class GetPhotos {
 
     return photos.when(success: (resultPhotos) {
       return Result.success(resultPhotos);
+      //성공하면 resultPhotos를 반환하고
     }, error: (e) {
       return Result.error(e);
+      // 실패하면 에러메세지를 내보낸다.
     });
   }
 }
