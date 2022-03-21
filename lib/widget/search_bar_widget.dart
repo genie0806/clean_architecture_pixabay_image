@@ -29,6 +29,7 @@ class SearchBar extends StatelessWidget {
           enabledBorder: OutlineInputBorder(
             borderRadius: BorderRadius.all(Radius.circular(20.0)),
             borderSide: BorderSide(width: 2, color: Colors.cyan),
+            //검색창 위젯 만들기
           ),
         ),
       ),
